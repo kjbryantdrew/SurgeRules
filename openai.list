@@ -1,51 +1,112 @@
-# AUTHOR: blackmatrix7
-# DOMAIN-KEYWORD: 1
-# DOMAIN-SUFFIX: 24
-# DOMAIN: 8
-# IP-ASN: 1
-# IP-CIDR: 2
-# NAME: OpenAI
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# TOTAL: 36
-# UPDATED: 2024-07-03 16:18:28
-DOMAIN,browser-intake-datadoghq.com
-DOMAIN,challenges.cloudflare.com
+# ============================================
+# AI Services Proxy Rules
+# 覆盖：OpenAI/ChatGPT, Claude/Anthropic, Gemini/Google AI,
+#       Grok/xAI, Perplexity, Poe, Meta AI, Groq, 其他
+# 更新：2026-03-16
+# 参考：SukkaW/Surge ai.conf, geekdada/surge-list
+# ============================================
+
+# ── OpenAI / ChatGPT ──
 DOMAIN,chat.openai.com.cdn.cloudflare.net
-DOMAIN,events.statsigapi.net
-DOMAIN,featuregates.org
-DOMAIN,gemini.google.com
-DOMAIN,o33249.ingest.sentry.io
 DOMAIN,openai-api.arkoselabs.com
 DOMAIN,openaiapi-site.azureedge.net
 DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
 DOMAIN,openaicomproductionae4b.blob.core.windows.net
 DOMAIN,production-openaicom-storage.azureedge.net
-DOMAIN,static.cloudflareinsights.com
-DOMAIN-KEYWORD,openai
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,chat.com
+DOMAIN-SUFFIX,sora.com
 DOMAIN-SUFFIX,ai.com
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net
+DOMAIN-SUFFIX,openaicom.imgix.net
+DOMAIN-SUFFIX,chatgpt.livekit.cloud
+DOMAIN-SUFFIX,host.livekit.cloud
+DOMAIN-SUFFIX,turn.livekit.cloud
+DOMAIN-SUFFIX,observeit.net
+DOMAIN-SUFFIX,client-api.arkoselabs.com
+DOMAIN-KEYWORD,openai
+
+# ── Anthropic / Claude ──
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claude.com
+
+# ── Google AI / Gemini / DeepMind ──
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,gemini.google
+DOMAIN-SUFFIX,generativeai.google
+DOMAIN-SUFFIX,notebooklm.google
+DOMAIN-SUFFIX,deepmind.google
+DOMAIN-SUFFIX,makersuite.google.com
+DOMAIN-SUFFIX,aistudio.google.com
+DOMAIN-SUFFIX,notebooklm.google.com
+DOMAIN-SUFFIX,bard.google.com
+DOMAIN,jules.google.com
+DOMAIN,antigravity.google
+DOMAIN,antigravity-unleash.goog
+DOMAIN,ai.google.dev
+DOMAIN,alkalicore-pa.clients6.google.com
+DOMAIN-SUFFIX,generativelanguage.googleapis.com
+DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+DOMAIN-SUFFIX,cloudcode-pa.googleapis.com
+DOMAIN-SUFFIX,geller-pa.googleapis.com
+DOMAIN,daily-cloudcode-pa.googleapis.com
+DOMAIN,robinfrontend-pa.googleapis.com
+DOMAIN,aisandbox-pa.googleapis.com
+DOMAIN,aida.googleapis.com
+DOMAIN-SUFFIX,deepmind.com
+DOMAIN-KEYWORD,alkalimakersuite-pa.clients6.google.com
+
+# ── xAI / Grok ──
+DOMAIN-SUFFIX,x.ai
+DOMAIN-SUFFIX,grok.com
+DOMAIN-SUFFIX,g.ai
+
+# ── Perplexity ──
+DOMAIN-SUFFIX,perplexity.ai
+
+# ── Poe ──
+DOMAIN-SUFFIX,poe.com
+
+# ── Meta AI ──
+DOMAIN-SUFFIX,meta.ai
+
+# ── Groq ──
+DOMAIN-SUFFIX,groq.com
+
+# ── 其他 AI 服务 ──
+DOMAIN-SUFFIX,clipdrop.co
+DOMAIN-SUFFIX,jasper.ai
+DOMAIN-SUFFIX,openart.ai
+DOMAIN-SUFFIX,dify.ai
+DOMAIN,openrouter.ai
+DOMAIN,api.jetbrains.ai
+DOMAIN,gateway.ai.cloudflare.com
+
+# ── 通用基础设施（OpenAI 相关 CDN/分析/安全） ──
+DOMAIN,browser-intake-datadoghq.com
+DOMAIN,challenges.cloudflare.com
+DOMAIN,static.cloudflareinsights.com
+DOMAIN,events.statsigapi.net
+DOMAIN,featuregates.org
+DOMAIN,o33249.ingest.sentry.io
 DOMAIN-SUFFIX,algolia.net
 DOMAIN-SUFFIX,api.statsig.com
 DOMAIN-SUFFIX,auth0.com
-DOMAIN-SUFFIX,chatgpt.com
-DOMAIN-SUFFIX,chatgpt.livekit.cloud
-DOMAIN-SUFFIX,client-api.arkoselabs.com
 DOMAIN-SUFFIX,events.statsigapi.net
 DOMAIN-SUFFIX,featuregates.org
-DOMAIN-SUFFIX,host.livekit.cloud
 DOMAIN-SUFFIX,identrust.com
 DOMAIN-SUFFIX,intercom.io
 DOMAIN-SUFFIX,intercomcdn.com
 DOMAIN-SUFFIX,launchdarkly.com
-DOMAIN-SUFFIX,oaistatic.com
-DOMAIN-SUFFIX,oaiusercontent.com
-DOMAIN-SUFFIX,observeit.net
-DOMAIN-SUFFIX,openai.com
-DOMAIN-SUFFIX,openaiapi-site.azureedge.net
-DOMAIN-SUFFIX,openaicom.imgix.net
 DOMAIN-SUFFIX,segment.io
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,stripe.com
-DOMAIN-SUFFIX,turn.livekit.cloud
+
+# ── IP 规则 ──
 IP-ASN,20473,no-resolve
 IP-CIDR,24.199.123.28/32,no-resolve
 IP-CIDR,64.23.132.171/32,no-resolve
