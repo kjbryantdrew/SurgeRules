@@ -60,6 +60,8 @@ DOMAIN,aisandbox-pa.googleapis.com
 DOMAIN,aida.googleapis.com
 DOMAIN-SUFFIX,deepmind.com
 DOMAIN-KEYWORD,alkalimakersuite-pa.clients6.google.com
+DOMAIN-SUFFIX,google-analytics.com
+DOMAIN-SUFFIX,googletagmanager.com
 
 # ── xAI / Grok ──
 DOMAIN-SUFFIX,x.ai
