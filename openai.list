@@ -1,8 +1,8 @@
 # ============================================
 # AI Services Proxy Rules
 # 覆盖：OpenAI/ChatGPT, Claude/Anthropic, Gemini/Google AI,
-#       Grok/xAI, Perplexity, Poe, Meta AI, Groq, 其他
-# 更新：2026-03-16
+#       Cursor, Grok/xAI, Perplexity, Poe, Meta AI, Groq, 其他
+# 更新：2026-10-16
 # 参考：SukkaW/Surge ai.conf, geekdada/surge-list
 # ============================================
 
@@ -34,6 +34,20 @@ DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,datadoghq.com
+
+# ── Cursor ──
+# 来源：https://cursor.com/docs/enterprise/network-configuration
+# DOMAIN-SUFFIX 同时覆盖主域名及所有层级子域名。
+DOMAIN-SUFFIX,cursor.com
+DOMAIN-SUFFIX,cursor.sh
+DOMAIN-SUFFIX,cursor-cdn.com
+DOMAIN-SUFFIX,cursorapi.com
+DOMAIN-SUFFIX,cursorvm.com
+DOMAIN,anysphere-binaries.s3.us-east-1.amazonaws.com
+# 登录相关域名；x.ai、grok.com 已由下方 xAI / Grok 规则覆盖。
+DOMAIN,accounts.spacex.ai
+DOMAIN,auth.grokusercontent.com
+DOMAIN,auth.grokipedia.com
 
 # ── Google AI / Gemini / DeepMind ──
 DOMAIN-SUFFIX,gemini.google.com
