@@ -1,8 +1,8 @@
 # ============================================
 # AI Services Proxy Rules
 # 覆盖：OpenAI/ChatGPT, Claude/Anthropic, Gemini/Google AI,
-#       Cursor, Grok/xAI, Perplexity, Poe, Meta AI, Groq, 其他
-# 更新：2026-10-16
+#       Cursor, Grok/xAI, Perplexity, Poe, Meta AI, Groq, Devin, 其他
+# 更新：2026-11-01
 # 参考：SukkaW/Surge ai.conf, geekdada/surge-list
 # ============================================
 
@@ -125,6 +125,14 @@ DOMAIN-SUFFIX,launchdarkly.com
 DOMAIN-SUFFIX,segment.io
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,stripe.com
+
+
+# ── Devin / Cognition ──
+# 来源：https://docs.devin.ai/enterprise/vpc/requirements , https://devin.ai/llms.txt
+DOMAIN-SUFFIX,devin.ai
+DOMAIN-SUFFIX,devinapps.com
+DOMAIN-SUFFIX,cognition.ai
+DOMAIN-SUFFIX,cognition.com
 
 # ── IP 规则 ──
 IP-ASN,20473,no-resolve
