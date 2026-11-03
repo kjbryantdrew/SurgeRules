@@ -1,8 +1,8 @@
 # ============================================
 # AI Services Proxy Rules
 # 覆盖：OpenAI/ChatGPT, Claude/Anthropic, Gemini/Google AI,
-#       Cursor, Grok/xAI, Perplexity, Poe, Meta AI, Groq, Devin, 其他
-# 更新：2026-11-01
+#       Cursor, Grok/xAI, Perplexity, Poe, Meta AI, Groq, Devin, Codeium/Windsurf, 其他
+# 更新：2026-11-03
 # 参考：SukkaW/Surge ai.conf, geekdada/surge-list
 # ============================================
 
@@ -126,6 +126,12 @@ DOMAIN-SUFFIX,segment.io
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,stripe.com
 
+
+# ── Codeium / Windsurf ──
+# 来源：https://docs.windsurf.com/troubleshooting/windsurf-common-issues （官方 allowlist）
+DOMAIN-SUFFIX,codeium.com
+DOMAIN-SUFFIX,windsurf.com
+DOMAIN-SUFFIX,codeiumdata.com
 
 # ── Devin / Cognition ──
 # 来源：https://docs.devin.ai/enterprise/vpc/requirements , https://devin.ai/llms.txt
