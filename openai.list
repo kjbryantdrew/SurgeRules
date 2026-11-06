@@ -2,7 +2,7 @@
 # AI Services Proxy Rules
 # 覆盖：OpenAI/ChatGPT, Claude/Anthropic, Gemini/Google AI,
 #       Cursor, Grok/xAI, Perplexity, Poe, Meta AI, Groq, Devin, Codeium/Windsurf, 其他
-# 更新：2026-11-03
+# 更新：2026-11-06
 # 参考：SukkaW/Surge ai.conf, geekdada/surge-list
 # ============================================
 
@@ -15,6 +15,7 @@ DOMAIN,openaicomproductionae4b.blob.core.windows.net
 DOMAIN,production-openaicom-storage.azureedge.net
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaistatsig.com
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,chat.com
@@ -33,6 +34,8 @@ DOMAIN-KEYWORD,openai
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,claudeusercontent.com
+DOMAIN-SUFFIX,claudemcpcontent.com
 DOMAIN-SUFFIX,datadoghq.com
 
 # ── Cursor ──
@@ -46,7 +49,6 @@ DOMAIN-SUFFIX,cursorvm.com
 DOMAIN,anysphere-binaries.s3.us-east-1.amazonaws.com
 # 登录相关域名；x.ai、grok.com 已由下方 xAI / Grok 规则覆盖。
 DOMAIN,accounts.spacex.ai
-DOMAIN,auth.grokusercontent.com
 DOMAIN,auth.grokipedia.com
 
 # ── Google AI / Gemini / DeepMind ──
@@ -58,6 +60,7 @@ DOMAIN-SUFFIX,deepmind.google
 DOMAIN-SUFFIX,makersuite.google.com
 DOMAIN-SUFFIX,aistudio.google.com
 DOMAIN-SUFFIX,notebooklm.google.com
+DOMAIN,notebook.google.com
 DOMAIN-SUFFIX,bard.google.com
 DOMAIN,jules.google.com
 DOMAIN,antigravity.google
@@ -83,6 +86,7 @@ DOMAIN-SUFFIX,googletagmanager.com
 # ── xAI / Grok ──
 DOMAIN-SUFFIX,x.ai
 DOMAIN-SUFFIX,grok.com
+DOMAIN-SUFFIX,grokusercontent.com
 DOMAIN-SUFFIX,g.ai
 
 # ── Perplexity ──
@@ -90,6 +94,7 @@ DOMAIN-SUFFIX,perplexity.ai
 
 # ── Poe ──
 DOMAIN-SUFFIX,poe.com
+DOMAIN-SUFFIX,poecdn.net
 
 # ── Meta AI ──
 DOMAIN-SUFFIX,meta.ai
@@ -99,11 +104,14 @@ DOMAIN-SUFFIX,groq.com
 
 # ── 其他 AI 服务 ──
 DOMAIN-SUFFIX,clipdrop.co
+DOMAIN,clipdrop-api.co
 DOMAIN-SUFFIX,jasper.ai
 DOMAIN-SUFFIX,openart.ai
 DOMAIN-SUFFIX,dify.ai
-DOMAIN,openrouter.ai
+DOMAIN-SUFFIX,openrouter.ai
 DOMAIN,api.jetbrains.ai
+DOMAIN,api.jetbrains.cloud
+DOMAIN,api.app.prod.grazie.aws.intellij.net
 DOMAIN,gateway.ai.cloudflare.com
 
 # ── 通用基础设施（OpenAI 相关 CDN/分析/安全） ──
